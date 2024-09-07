@@ -61,27 +61,33 @@ body {
 }
 
 #gameControlButtons button {
-    background-color: #ffcb05; /* Pokémon yellow color */
-    border: 2px solid #3b4cca; /* Pokémon blue color for the border */
-    color: white;
-    font-family: "PokemonFont", Arial, sans-serif;
-    font-size: 1.5vh; /* Smaller font size */
-    padding: 8px 15px; /* Smaller padding */
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 3px #2a2a2a; /* Slightly smaller shadow */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    letter-spacing: 0.3vh; /* Increased letter spacing */
+	
+	background-image: url('./assets/pokeball.png'); /* Pokéball image as background */
+	background-size: cover; /* Ensure the image covers the button */
+	background-position: center; /* Center the image within the button */
+	background-repeat: no-repeat; /* Prevent the image from repeating */
+	
+	color: white;
+	font-family: 'PokemonFont', Arial, sans-serif; /* Custom font for Pokémon theme */
+	font-size: 1.5vh; /* Font size */
+	width: 100px; /* Set width */
+	height: 100px; /* Set height (same as width for a circle) */
+	padding: 0; /* Remove padding */
+	border-radius: 50%; /* Make the button circular */
+	cursor: pointer;
+	margin-top: 3vh;
+	
+	letter-spacing: 0.3vh; /* Letter spacing */
+	text-align: center; /* Center text horizontally */
+	display: flex; /* Flexbox for centering content */
+	justify-content: center; /* Center content horizontally */
+	align-items: center; /* Center content vertically */
 }
-
 #gameControlButtons button:hover {
-    background-color: #f4d00c; /* Lighter yellow on hover */
-    box-shadow: 0 5px #2a2a2a; /* Slightly larger shadow */
     transform: translateY(-2px); /* Makes button rise when hovered */
 }
 
 #gameControlButtons button:active {
-    box-shadow: 0 2px #2a2a2a; /* Reduces shadow for pressed effect */
     transform: translateY(2px); /* Lowers the button on click */
 }
 

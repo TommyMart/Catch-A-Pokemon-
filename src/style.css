@@ -116,5 +116,7 @@ body {
 
 .whackamoleSpawnArea {
 	width: calc(20% - 10px);
+	max-height: 20vh;
+	max-width: 20vh;
 
 }

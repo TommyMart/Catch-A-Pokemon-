@@ -162,6 +162,8 @@ function toggleGameControlButtons(){
 
 }
 
+let gameAudio = document.getElementById("gameAudio");
+
 function startGame(desiredGameTime = defaultGameDuration){
 	gameTimeRemaining = desiredGameTime;
 	// isGameRunning = true;
@@ -175,6 +177,9 @@ function startGame(desiredGameTime = defaultGameDuration){
 	toggleGameplayContent();
 	// toggle the cursor
 	toggleCursor();
+
+	// Start playing the audio
+    gameAudio.play();
 
 	gameCountdownInterval = setInterval(() => {
 		gameTimeRemaining -= 1;
@@ -220,6 +225,9 @@ function stopGame(){
 	clearInterval(despawnerInterval);
 	gameTimeStep();
 
+	// Stop playing the audio
+    gameAudio.pause();
+	
 	// toggle game controls
 	toggleGameControlButtons();
 	// toggle game content

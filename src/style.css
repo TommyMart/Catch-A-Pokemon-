@@ -1,14 +1,33 @@
 body {
+	background-image: url("./assets/pokemonforest.jpg");
 	font-family: Arial, sans-serif;
+	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: left;
 	min-height: 100vh;
 	margin: 0;
 }
 
+@font-face {
+	font-family: "PokemonFont";
+	src: url("./fonts/PokemonSolid.ttf") format("truetype");
+    font-weight:bold;
+    font-style: normal;
+}
+
+#title {
+	/* font-size: xx-large; */
+	
+	font-family: "PokemonFont";
+	color: #ffcb05;
+	font-size: 10vh;
+	letter-spacing: .5vh;
+	
+}
 #gameMenu {
+	font-size: 3vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,15 +46,16 @@ body {
 	width: 100%;
 	max-width: 600px;
 	margin-bottom: 20px;
+	font-size: 1em;
 }
 
 #gameplayArea {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 10px;
+	gap: 2vw;
 	width: 100%;
-	max-width: 600px;
+	max-width: 90%;
 }
 
 .whackamoleSpawnArea {

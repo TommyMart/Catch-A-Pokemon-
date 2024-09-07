@@ -33,7 +33,7 @@ Array.from(spawnableAreas).forEach(area => {
 function toggleCursor(){
 	let bodyElement = document.getElementsByTagName("body")[0];
 	if (gameTimeRemaining > 0) {
-		bodyElement.style.cursor = 'url(./assets/Hammer.gif), auto';
+		bodyElement.style.cursor = 'url(./assets/pokeball_resized.png), auto';
 	} else {
 		bodyElement.style.cursor = "";
 	}

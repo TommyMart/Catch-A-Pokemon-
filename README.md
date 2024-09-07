@@ -1,5 +1,5 @@
-# whackamole-inDOM
-Whackamole in the browser using HTML and JS. 
+# Catch-A-Pokemon Game
+Catch a Pokemon game in the browser using HTML and JS. 
 
 
 - Game menu

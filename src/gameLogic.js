@@ -109,17 +109,6 @@ function deleteRandomWhackamole(){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 function toggleGameplayContent(){
 	// toggle the score, timer text, and game area elements
 	if (gameTimeRemaining > 0){
@@ -150,32 +139,6 @@ function updateHighScore(){
 	highscoreDisplayText.innerText = "High Score: " + highestGameScore;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // if (gameTimeRemaining > 0){
 // 
 // }
@@ -198,8 +161,6 @@ function toggleGameControlButtons(){
 	}
 
 }
-
-
 
 function startGame(desiredGameTime = defaultGameDuration){
 	gameTimeRemaining = desiredGameTime;
@@ -279,18 +240,6 @@ startGameButton.addEventListener("click", () => {
 stopGameButton.addEventListener("click", () => {
 	stopGame();
 });
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // let isGameRunning = false; 

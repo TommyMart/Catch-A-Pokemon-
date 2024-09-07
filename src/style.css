@@ -7,7 +7,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: left;
+	justify-content: flex-start;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
@@ -23,9 +23,10 @@ body {
 #title {
     font-family: "PokemonFont", Arial, sans-serif;
     color: #ffcb05; /* Pokémon yellow */
-    font-size: 8vh; /* Adjusted to a slightly smaller size for balance */
+    font-size: 3em; /* Adjusted to a slightly smaller size for balance */
     letter-spacing: 0.7vh; /* Increased letter spacing for a bold look */
     margin-bottom: 1vh;
+	
     text-shadow: 3px 3px 0px #3b4cca, /* Blue shadow */
                  6px 6px 0px #2a2a2a; /* Darker shadow for a 3D effect */
     text-transform: uppercase; /* Makes the heading all uppercase */
@@ -100,6 +101,25 @@ body {
 	margin-left: 3vh;
 	margin-right: 3vh;
 	font-size: 1em;
+}
+
+@media (max-width: 600px) {
+	#gameRunningInfo {
+		font-size: 0.9em;
+	}
+	#highScoreDisplay {
+		font-size: .8em;
+	}
+	
+}
+
+@media (max-width: 400px) {
+	#gameRunningInfo {
+		font-size: 0.8em;
+	}
+	#highScoreDisplay {
+		font-size: .8em;
+	}
 }
 
 #gameplayArea {

@@ -23,7 +23,7 @@ body {
 #title {
     font-family: "PokemonFont", Arial, sans-serif;
     color: #ffcb05; /* Pokémon yellow */
-    font-size: 3em; /* Adjusted to a slightly smaller size for balance */
+    font-size: 5em; /* Adjusted to a slightly smaller size for balance */
     letter-spacing: 0.7vh; /* Increased letter spacing for a bold look */
     margin-bottom: 1vh;
 	
@@ -104,13 +104,22 @@ body {
 	font-size: 1em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	#gameRunningInfo {
 		font-size: 0.9em;
 	}
 	#highScoreDisplay {
 		font-size: .8em;
 	}
+	#title {
+		font-size: 3em;
+	}
+	#gameControlButtons button {
+		font-size: 1em;
+		width: 80px; /* Set width */
+		height: 80px;
+	}
+	
 	
 }
 
@@ -119,7 +128,13 @@ body {
 		font-size: 0.8em;
 	}
 	#highScoreDisplay {
-		font-size: .8em;
+		font-size: 1vh;
+	}
+	#title {
+		font-size: 3em;
+	}
+	#gameControlButtons button {
+		font-size: 1em;
 	}
 }
 

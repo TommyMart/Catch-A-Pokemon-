@@ -227,7 +227,7 @@ function stopGame(){
 
 	// Stop playing the audio
     gameAudio.pause();
-	
+
 	// toggle game controls
 	toggleGameControlButtons();
 	// toggle game content
@@ -242,7 +242,7 @@ function stopGame(){
 // null.addEventListener
 // button.addEventListener
 startGameButton.addEventListener("click", () => {
-	startGame(10);
+	startGame(30);
 });
 
 stopGameButton.addEventListener("click", () => {

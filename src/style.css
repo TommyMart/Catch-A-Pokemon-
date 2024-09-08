@@ -1,17 +1,47 @@
+html, body {
+    height: 100%; /* Ensure the body and html elements cover the entire viewport height */
+    margin: 0;
+    padding: 0;
+}
+
 body {
-	background-image: url("./assets/pokemonforest.jpg");
+	/* background-image: url("./assets/pokemonforest.jpg");  */
 	background-position: center;
-	background-size: cover;
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Fix the background while scrolling */
+	
 	font-family: Arial, sans-serif;
 	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	height: 100vh;
+	height: 100vh; 
 	margin: 0;
 	padding: 0;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
+#backgroundContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url('./assets/oceanBackground.jpg'); */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Ensure it's behind all elements */
+}
+
 
 @font-face {
 	font-family: "PokemonFont";
@@ -121,6 +151,30 @@ body {
 	}
 	
 	
+}
+
+#themeToggler {
+    position: fixed;  /* Keeps the button in a fixed position */
+    bottom: 1vw;     /* Distance from the bottom of the screen */
+    left: 2vw;       /* Distance from the left side of the screen */
+    padding: 5px 10px;  /* Adjust the padding for a nicer look */
+    font-family: "PokemonFont", Arial, sans-serif;
+	font-size: 1em; /* Slightly larger for readability */
+	color: #ffcb05; /* Pokémon yellow for text */
+	letter-spacing: 0.1em; /* Add some letter spacing for style */
+	background-color: #3b4cca; /* Pokémon blue background */
+	border: 3px solid #ffcb05; /* Pokémon yellow border */
+	border-radius: 10px; /* Slightly rounded corners */
+	padding: 7px; /* Adds padding around the content */
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for depth */
+}
+
+#themeToggler:hover {
+    transform: translateY(-2px); /* Makes button rise when hovered */
+}
+
+#themeToggler:active {
+    transform: translateY(2px); /* Lowers the button on click */
 }
 
 @media (max-width: 400px) {

@@ -126,7 +126,7 @@ body {
 #gameRunningInfo {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	width: 90%;
 	max-width: 600px;
 	
 	margin-left: 3vh;
@@ -160,49 +160,15 @@ body {
     transform: translateY(2px); /* Lowers the button on click */
 }
 
-@media (max-width: 800px) {
-	#gameRunningInfo {
-		font-size: 0.9em;
-	}
-	#highScoreDisplay {
-		font-size: 3em;
-	}
-	#title {
-		font-size: 3em;
-	}
-	#gameControlButtons button {
-		font-size: 1em;
-		width: 70px; /* Set width */
-		height: 70px;
-	}
-	
-	
-}
-
-@media (max-width: 400px) {
-	#gameRunningInfo {
-		font-size: 0.8em;
-	}
-	#highScoreDisplay {
-		font-size: 3vh;
-	}
-	#title {
-		font-size: 3em;
-	}
-	#gameControlButtons button {
-		font-size: 1em;
-	}
-}
-
 #gameplayArea {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	
 	gap: 2vw;
 	width: 100%;
 	max-width: 90%;
 	max-height: 60vh; /* Restrict height to limit the moles to a certain part of the screen */
-    
+    justify-content: center;
     position: relative;
 }
 
@@ -212,3 +178,94 @@ body {
 	max-width: 20vh;
 
 }
+
+@media (max-width: 700px) {
+	#gameRunningInfo {
+		font-size: 0.9em;
+	}
+	#highScoreDisplay {
+		font-size: 2vh;
+	}
+	#title {
+		font-size: 3.5vh;
+	}
+	#gameRunningInfo {
+		font-size: 1.2vh;
+		
+	}
+	#gameControlButtons button {
+		font-size: 1em;
+		width: 70px; /* Set width */
+		height: 70px;
+	}
+	.whackamoleSpawnArea {
+		width: calc(30% - 10px);
+		max-height: 30vh;
+		max-width: 30vh;
+	}
+	#gameplayArea {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr); /* Distribute Pokémon across four columns */
+		grid-template-rows: repeat(4, 1fr); /* Ensure 4 rows */
+		gap: 4vw; /* Adjust gap between them */
+		max-height: 80vh;
+
+	}
+	#themeToggler {
+        bottom: 3vw;      /* Increase distance from bottom for smaller screens */
+        left: 3vw;        /* Adjust left positioning */
+        font-size: 0.8em; /* Reduce font size slightly */
+        padding: 4px 8px; /* Adjust padding for smaller screen */
+        border-radius: 8px; /* Slightly reduce border radius */
+    }
+	
+}
+
+@media (max-width: 400px) {
+	body {
+        margin: 5px;
+        padding: 5px;
+    }
+	#gameControlButtons button {
+        width: 60px;
+        height: 60px;
+    }
+	#gameRunningInfo {
+		font-size: 1vh;
+		
+	}
+	#gameplayArea {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr); /* Distribute Pokémon across four columns */
+		grid-template-rows: repeat(4, 1fr); /* Ensure 4 rows */
+		gap: 4vw; /* Adjust gap between them */
+		max-height: 80vh;
+
+	}
+	.whackamoleSpawnArea {
+		width: calc(30% - 10px);
+		max-height: 30vh;
+		max-width: 30vh;
+	}
+	#highScoreDisplay {
+		font-size: 2vh;
+		padding: .5vh;
+
+	}
+	#title {
+		font-size: 3vh;
+		align-items: center;
+		justify-content: center;
+	}
+	#gameControlButtons button {
+		font-size: 2vh;
+	}
+	#themeToggler {
+        bottom: 3vw;      /* Increase distance from bottom for smaller screens */
+        left: 3vw;        /* Adjust left positioning */
+        font-size: 0.8em; /* Reduce font size slightly */
+        padding: 4px 8px; /* Adjust padding for smaller screen */
+        border-radius: 8px; /* Slightly reduce border radius */
+    }
+}
+
